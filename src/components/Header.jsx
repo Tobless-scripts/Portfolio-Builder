@@ -28,7 +28,7 @@ function Header() {
                 <nav>
                     <ul className="links">
                         <img
-                            src="/Portfolio Builder/public/images/closeMenu.svg"
+                            src="/Portfolio Builder/public/closeMenu.svg"
                             alt="close-menu"
                             id="close"
                             onClick={hideSideBar}

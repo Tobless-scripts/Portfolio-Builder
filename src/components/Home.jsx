@@ -22,7 +22,7 @@ function Main() {
             <div className="first-right-section">
                 <h2>Get your Unique Graphic Design Brief</h2>
                 <img
-                    src="/Portfolio Builder/public/images/hero.svg"
+                    src="/Portfolio Builder/public/hero.svg"
                     alt=""
                     className="hero"
                 />
