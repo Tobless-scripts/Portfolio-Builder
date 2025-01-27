@@ -1,0 +1,28 @@
+.blog-container {
+    max-width: 600px;
+    margin: 5rem auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.blog-container h1 {
+    color: #ff5252;
+}
+.blog-container p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+.blog-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #11262e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+.blog-container a:hover {
+    background-color: #01161e;
+}

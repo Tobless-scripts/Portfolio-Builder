@@ -1,0 +1,33 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    gap: 3rem;
+    padding: 1rem 7rem;
+}
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.social-media img {
+    width: 1rem;
+    cursor: pointer;
+}
+.logo {
+    color: white;
+}
+.footer p {
+    background: linear-gradient(to right, #b8b8b8, #525252);
+    background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem 3rem;
+    }
+}

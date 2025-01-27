@@ -11,6 +11,14 @@ function Header() {
         sidebar.style.display = "none";
         document.querySelector(".hamburger").style.display = "flex";
     }
+    window.onscroll = function () {
+        var header = document.querySelector(".header");
+        if (window.scrollY > 30) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    };
 
     return (
         <header>
@@ -20,7 +28,7 @@ function Header() {
                 <nav>
                     <ul className="links">
                         <img
-                            src="/Media/closeMenu.svg"
+                            src="/public/images/closeMenu.svg"
                             alt="close-menu"
                             id="close"
                             onClick={hideSideBar}
@@ -34,6 +42,9 @@ function Header() {
                         </li>
                         <li>
                             <Link to="/blog">Blog</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">About</Link>
                         </li>
                     </ul>
                 </nav>
