@@ -21,7 +21,11 @@ function Main() {
             </div>
             <div className="first-right-section">
                 <h2>Get your Unique Graphic Design Brief</h2>
-                <img src="/public/images/hero.svg" alt="" className="hero" />
+                <img
+                    src="/Portfolio Builder/public/images/hero.svg"
+                    alt=""
+                    className="hero"
+                />
                 <button className="generate">
                     <Link to="/brief">GENERATE BRIEF</Link>
                 </button>

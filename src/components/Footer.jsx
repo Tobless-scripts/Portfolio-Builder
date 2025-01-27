@@ -5,9 +5,12 @@ function Footer() {
             <div className="footer">
                 <div className="logo">LOGO</div>
                 <div className="social-media">
-                    <img src="/public/images/facebook.svg" alt="facebook" />
-                    <img src="/public/images/instagram.svg" alt="instagram" />
-                    <img src="/public/images/tiktok.svg" alt="tiktok" />
+                    <img
+                        src="/Portfolio Builder/public/images/facebook.svg"
+                        alt="facebook"
+                    />
+                    <img src="/Portfolio Builder/public/images/instagram.svg" />
+                    <img src="/Portfolio Builder/public/images/tiktok.svg" />
                 </div>
                 <p>&copy; copyright - 2025</p>
             </div>
