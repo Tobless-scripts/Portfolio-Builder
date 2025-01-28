@@ -54,6 +54,42 @@ h2 {
 .navbar {
     padding: 0;
 }
+.about-us {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1em auto;
+}
+.about,
+.offer {
+    background-color: transparent;
+    color: #333;
+    padding: 3rem 2rem;
+    margin: 3rem auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    text-align: center;
+    color: #cc3700;
+    font-size: 1rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-us {
+        flex-direction: column;
+    }
+    .about,
+    .offer {
+        margin: 1rem auto;
+        padding: 1rem 2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .first {
         flex-direction: column;

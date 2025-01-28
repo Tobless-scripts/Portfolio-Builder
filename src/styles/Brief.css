@@ -116,7 +116,6 @@
     background: linear-gradient(to right, #b8b8b8, #525252);
     background-clip: text;
     color: transparent;
-    background-clip: text;
     z-index: 4;
 }
 .hiddenText {
