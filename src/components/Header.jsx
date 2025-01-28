@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Close from "/images/closeMenu.svg";
 function Header() {
     function showSideBar() {
         const sidebar = document.querySelector(".links");
@@ -28,7 +29,7 @@ function Header() {
                 <nav>
                     <ul className="links">
                         <img
-                            src="/Portfolio Builder/public/closeMenu.svg"
+                            src={Close}
                             alt="close-menu"
                             id="close"
                             onClick={hideSideBar}
