@@ -3,6 +3,10 @@
     grid-template-columns: repeat(3, 30vw);
     gap: 3rem;
     padding: 1rem 7rem;
+    margin: 1em auto 0 auto;
+}
+.logo img {
+    width: 3em;
 }
 .social-media {
     display: flex;

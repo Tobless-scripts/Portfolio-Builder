@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Close from "/images/closeMenu.svg";
+import Logo from "/images/logo.png";
 function Header() {
     function showSideBar() {
         const sidebar = document.querySelector(".links");
@@ -24,7 +25,7 @@ function Header() {
     return (
         <header>
             <div className="header">
-                <img src="/Media/logo.png" alt="logo" className="logo" />
+                <img src={Logo} alt="logo" className="logo" />
 
                 <nav>
                     <ul className="links">
