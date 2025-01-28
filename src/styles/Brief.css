@@ -61,11 +61,18 @@
 }
 
 .briefContainer {
-    margin: 3em 0;
+    margin: 3em auto;
     display: grid;
-    grid-template-columns: repeat(3, 24.8vw);
+    grid-template-columns: repeat(
+        3,
+        1fr
+    ); /* Adjusted for better responsiveness */
+    place-items: center;
     gap: 3em;
+    justify-content: center; /* Ensures horizontal centering */
+    align-content: center; /* Ensures vertical centering */
 }
+
 .briefContent {
     position: relative;
     border-radius: 1em;
@@ -75,6 +82,7 @@
     font-weight: bold;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
     cursor: pointer;
+    margin: auto;
 }
 .briefContent::before {
     content: "";
@@ -251,6 +259,8 @@
     .briefContainer {
         grid-template-columns: repeat(2, 40vw);
         margin: 1em auto;
+        gap: 5vw;
+        place-items: center;
     }
     .briefText h2 {
         line-height: 20px;
