@@ -74,8 +74,9 @@ h2 {
 
 .about-text {
     text-align: center;
-    color: #cc3700;
-    font-size: 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 20px;
     text-align: left;
 }
 

@@ -72,7 +72,7 @@ body {
 @media screen and (max-width: 768px) {
     .header.sticky,
     .header {
-        padding: 3rem;
+        padding: 1rem 3rem;
     }
     .links {
         display: none;

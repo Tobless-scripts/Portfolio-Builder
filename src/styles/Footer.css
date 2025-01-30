@@ -1,21 +1,22 @@
 .footer {
-    display: grid;
-    grid-template-columns: repeat(3, 30vw);
+    display: flex;
     gap: 3rem;
     padding: 1rem 7rem;
     margin: 1em auto 0 auto;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo img {
     width: 3em;
 }
 .social-media {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
 .social-media img {
-    width: 1rem;
+    width: 2rem;
     cursor: pointer;
 }
 .logo {
@@ -30,8 +31,10 @@
 
 @media screen and (max-width: 1000px) {
     .footer {
-        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
         gap: 1rem;
         padding: 1rem 3rem;
+        justify-content: space-between;
+        align-items: center;
     }
 }
