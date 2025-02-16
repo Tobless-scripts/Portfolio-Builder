@@ -1,25 +1,24 @@
 import { Link } from "react-router-dom";
-import Close from "/images/closeMenu.svg";
 import Logo from "/images/logo.png";
+import { useEffect, useState } from "react";
 function Header() {
-    function showSideBar() {
-        const sidebar = document.querySelector(".links");
-        sidebar.style.display = "block";
-        document.querySelector(".hamburger").style.display = "none";
-    }
+    useEffect(() => {
+        window.onscroll = function () {
+            var header = document.querySelector(".header");
+            var links = document.querySelector(".links");
+            if (window.scrollY >= 30) {
+                header.classList.add("sticky");
+                links.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+                links.classList.add("sticky");
+            }
+        };
+    });
+    const [isOpen, setIsOpen] = useState(false);
 
-    function hideSideBar() {
-        const sidebar = document.querySelector(".links");
-        sidebar.style.display = "none";
-        document.querySelector(".hamburger").style.display = "flex";
-    }
-    window.onscroll = function () {
-        var header = document.querySelector(".header");
-        if (window.scrollY > 30) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
     };
 
     return (
@@ -27,15 +26,13 @@ function Header() {
             <div className="header">
                 <img src={Logo} alt="logo" className="logo" />
 
-                <nav>
-                    <ul className="links">
-                        <img
-                            src={Close}
-                            alt="close-menu"
-                            id="close"
-                            onClick={hideSideBar}
-                            style={{ cursor: "pointer" }}
-                        />
+                <div className="hamburger" onClick={toggleMenu}>
+                    <span className={isOpen ? "bar active" : "bar"}></span>
+                    <span className={isOpen ? "bar active" : "bar"}></span>
+                    <span className={isOpen ? "bar active" : "bar"}></span>
+                </div>
+                <nav className={isOpen ? "links active" : "links"}>
+                    <ul>
                         <li>
                             <Link to="/home">Home</Link>
                         </li>
@@ -50,11 +47,6 @@ function Header() {
                         </li>
                     </ul>
                 </nav>
-                <div className="hamburger" onClick={showSideBar}>
-                    <div className="menu"></div>
-                    <div className="menu"></div>
-                    <div className="menu"></div>
-                </div>
             </div>
         </header>
     );
